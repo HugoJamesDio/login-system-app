@@ -28,7 +28,8 @@ jobs:
           echo "${{ secrets.AWS_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
           chmod 600 ~/.ssh/id_rsa
       - name: Connect to AWS VM
-        run: ssh -i ~/.ssh/id_rsa ec2-user@3.144.108.21 "echo 'Connected successfully!'"
+        run: |
+          ssh -o StrictHostKeyChecking=no -i ~/.ssh/id_rsa ec2-user@3.144.108.21 "echo 'Connected successfully!'"
 
       - name: Deploy to AWS EC2
         run: |
