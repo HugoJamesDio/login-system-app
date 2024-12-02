@@ -75,7 +75,7 @@ let comparePassword = (password, userObject) => {
     });
 };
 
-export default = {
+export default {
     handleLogin: handleLogin,
     findUserByEmail: findUserByEmail,
     findUserById: findUserById,
