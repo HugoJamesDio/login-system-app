@@ -1,4 +1,4 @@
-import DBConnection from "../configs/DBConnection";
+import DBConnection from "../configs/DBConnection.js";
 import bcrypt from "bcryptjs";
 
 let handleLogin = (email, password) => {
@@ -75,7 +75,7 @@ let comparePassword = (password, userObject) => {
     });
 };
 
-module.exports = {
+export default = {
     handleLogin: handleLogin,
     findUserByEmail: findUserByEmail,
     findUserById: findUserById,
