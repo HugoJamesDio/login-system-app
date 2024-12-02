@@ -1,4 +1,4 @@
-import DBConnection from "./../configs/DBConnection";
+import DBConnection from "./../configs/DBConnection.js";
 import bcrypt from "bcryptjs";
 
 let createNewUser = (data) => {
@@ -51,6 +51,6 @@ let checkExistEmail = (email) => {
         }
     });
 };
-module.exports = {
+export default = {
     createNewUser: createNewUser
 };
