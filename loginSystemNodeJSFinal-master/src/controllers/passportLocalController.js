@@ -1,6 +1,6 @@
 import passportLocal from "passport-local";
 import passport from "passport";
-import loginService from "../services/loginService";
+import loginService from "../services/loginService.js";
 
 let LocalStrategy = passportLocal.Strategy;
 
@@ -46,4 +46,4 @@ passport.deserializeUser((id, done) => {
     });
 });
 
-module.exports = initPassportLocal;
+export default = initPassportLocal;
