@@ -26,4 +26,4 @@ let initWebRoutes = (app) => {
     router.post("/logout", loginController.postLogOut);
     return app.use("/", router);
 };
-export default = initWebRoutes;
+export default initWebRoutes;
