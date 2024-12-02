@@ -34,7 +34,7 @@ let createNewUser = async (req, res) => {
         return res.redirect("/register");
     }
 };
-export default = {
+export default {
     getPageRegister: getPageRegister,
     createNewUser: createNewUser
 };
