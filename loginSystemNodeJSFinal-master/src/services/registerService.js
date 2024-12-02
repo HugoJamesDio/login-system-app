@@ -51,6 +51,6 @@ let checkExistEmail = (email) => {
         }
     });
 };
-export default = {
+export default {
     createNewUser: createNewUser
 };
