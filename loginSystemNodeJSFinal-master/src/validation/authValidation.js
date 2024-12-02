@@ -19,7 +19,7 @@ let validateLogin = [
     .not().isEmpty()
 ];
 
-module.exports = {
+export default = {
     validateRegister: validateRegister,
     validateLogin: validateLogin
 };
