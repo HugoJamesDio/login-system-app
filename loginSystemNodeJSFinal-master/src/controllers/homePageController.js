@@ -4,6 +4,6 @@ let handleHelloWorld = async (req, res) => {
     });
 };
 
-export default = {
+export default {
     handleHelloWorld: handleHelloWorld,
 };
