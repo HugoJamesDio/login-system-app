@@ -48,7 +48,7 @@ let postLogOut = (req, res) => {
     });
 };
 
-export default = {
+export default {
     getPageLogin: getPageLogin,
     handleLogin: handleLogin,
     checkLoggedIn: checkLoggedIn,
