@@ -1,4 +1,4 @@
-import registerService from "./../services/registerService";
+import registerService from "./../services/registerService.js";
 import { validationResult } from "express-validator";
 
 let getPageRegister = (req, res) => {
@@ -34,7 +34,7 @@ let createNewUser = async (req, res) => {
         return res.redirect("/register");
     }
 };
-module.exports = {
+export default = {
     getPageRegister: getPageRegister,
     createNewUser: createNewUser
 };
