@@ -1,5 +1,5 @@
 import { validationResult } from "express-validator";
-import loginService from "../services/loginService";
+import loginService from "../services/loginService.js";
 
 let getPageLogin = (req, res) => {
     return res.render("login.ejs", {
@@ -48,7 +48,7 @@ let postLogOut = (req, res) => {
     });
 };
 
-module.exports = {
+export default = {
     getPageLogin: getPageLogin,
     handleLogin: handleLogin,
     checkLoggedIn: checkLoggedIn,
