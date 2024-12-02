@@ -1,10 +1,10 @@
 import express from "express";
-import homePageController from "../controllers/homePageController";
-import registerController from "../controllers/registerController";
-import loginController from "../controllers/loginController";
-import auth from "../validation/authValidation";
+import homePageController from "../controllers/homePageController.js";
+import registerController from "../controllers/registerController.js";
+import loginController from "../controllers/loginController.js";
+import auth from "../validation/authValidation".js;
 import passport from "passport";
-import initPassportLocal from "../controllers/passportLocalController";
+import initPassportLocal from "../controllers/passportLocalController.js";
 
 // Init all passport
 initPassportLocal();
@@ -26,4 +26,4 @@ let initWebRoutes = (app) => {
     router.post("/logout", loginController.postLogOut);
     return app.use("/", router);
 };
-module.exports = initWebRoutes;
+export default = initWebRoutes;
