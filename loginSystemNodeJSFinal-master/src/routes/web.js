@@ -2,7 +2,7 @@ import express from "express";
 import homePageController from "../controllers/homePageController.js";
 import registerController from "../controllers/registerController.js";
 import loginController from "../controllers/loginController.js";
-import auth from "../validation/authValidation".js;
+import auth from "../validation/authValidation.js";
 import passport from "passport";
 import initPassportLocal from "../controllers/passportLocalController.js";
 
